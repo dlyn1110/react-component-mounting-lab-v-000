@@ -13,7 +13,7 @@ componentDidMount() {
   this.interval = setInterval(this.clockTick, 1000);
 }
 
-componentWillMount() {
+componentWillUnmount() {
   clearInterval(this.interval);
 }
 
